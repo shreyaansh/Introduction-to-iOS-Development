@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		ACC818EE1D1AA1BD004734F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC818ED1D1AA1BD004734F0 /* AppDelegate.swift */; };
-		ACC818F01D1AA1BD004734F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC818EF1D1AA1BD004734F0 /* ViewController.swift */; };
 		ACC818F31D1AA1BD004734F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC818F11D1AA1BD004734F0 /* Main.storyboard */; };
 		ACC818F51D1AA1BD004734F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC818F41D1AA1BD004734F0 /* Assets.xcassets */; };
 		ACC818F81D1AA1BD004734F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC818F61D1AA1BD004734F0 /* LaunchScreen.storyboard */; };
 		ACC819031D1AA1BD004734F0 /* Introduction_to_iOS_DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC819021D1AA1BD004734F0 /* Introduction_to_iOS_DevelopmentTests.swift */; };
 		ACC8190E1D1AA1BD004734F0 /* Introduction_to_iOS_DevelopmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8190D1D1AA1BD004734F0 /* Introduction_to_iOS_DevelopmentUITests.swift */; };
+		ACC8191C1D1AAB0D004734F0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8191B1D1AAB0D004734F0 /* MainVC.swift */; };
+		ACC8191E1D1AAD5D004734F0 /* Shakesound.wav in Resources */ = {isa = PBXBuildFile; fileRef = ACC8191D1D1AAD5D004734F0 /* Shakesound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		ACC818EA1D1AA1BD004734F0 /* Introduction to iOS Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Introduction to iOS Development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC818ED1D1AA1BD004734F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACC818EF1D1AA1BD004734F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ACC818F21D1AA1BD004734F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACC818F41D1AA1BD004734F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACC818F71D1AA1BD004734F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		ACC819091D1AA1BD004734F0 /* Introduction to iOS DevelopmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Introduction to iOS DevelopmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC8190D1D1AA1BD004734F0 /* Introduction_to_iOS_DevelopmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction_to_iOS_DevelopmentUITests.swift; sourceTree = "<group>"; };
 		ACC8190F1D1AA1BD004734F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC8191B1D1AAB0D004734F0 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		ACC8191D1D1AAD5D004734F0 /* Shakesound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Shakesound.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				ACC818ED1D1AA1BD004734F0 /* AppDelegate.swift */,
-				ACC818EF1D1AA1BD004734F0 /* ViewController.swift */,
 				ACC818F11D1AA1BD004734F0 /* Main.storyboard */,
 				ACC818F41D1AA1BD004734F0 /* Assets.xcassets */,
 				ACC818F61D1AA1BD004734F0 /* LaunchScreen.storyboard */,
 				ACC818F91D1AA1BD004734F0 /* Info.plist */,
+				ACC8191B1D1AAB0D004734F0 /* MainVC.swift */,
+				ACC8191D1D1AAD5D004734F0 /* Shakesound.wav */,
 			);
 			path = "Introduction to iOS Development";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				ACC818F81D1AA1BD004734F0 /* LaunchScreen.storyboard in Resources */,
 				ACC818F51D1AA1BD004734F0 /* Assets.xcassets in Resources */,
 				ACC818F31D1AA1BD004734F0 /* Main.storyboard in Resources */,
+				ACC8191E1D1AAD5D004734F0 /* Shakesound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACC818F01D1AA1BD004734F0 /* ViewController.swift in Sources */,
 				ACC818EE1D1AA1BD004734F0 /* AppDelegate.swift in Sources */,
+				ACC8191C1D1AAB0D004734F0 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
