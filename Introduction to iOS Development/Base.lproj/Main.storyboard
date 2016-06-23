@@ -23,16 +23,6 @@
                                     <constraint firstAttribute="height" constant="345" id="2TD-74-EkG"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AD-DJ-pwP">
-                                <rect key="frame" x="234" y="509" width="133" height="71"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="133" id="CUd-h2-RHx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Get Answer">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R39-Tg-eXn">
                                 <rect key="frame" x="161" y="215.5" width="278" height="169"/>
                                 <constraints>
@@ -45,6 +35,19 @@
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AD-DJ-pwP">
+                                <rect key="frame" x="234" y="509" width="133" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="CUd-h2-RHx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Get Answer">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getAnswer:" destination="DBF-hO-URe" eventType="touchUpInside" id="Fch-Cg-FNu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.39106969330194985" green="0.21583380872356939" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -60,6 +63,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Shake for Answer" id="wCt-fc-vbD"/>
+                    <connections>
+                        <outlet property="MainLabel" destination="R39-Tg-eXn" id="VUj-el-KTH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCA-Cp-0tM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
