@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bxG-zt-2NL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DBF-hO-URe">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Shake for Answer-->
+        <!--The Original Sarcastic 8 Ball!-->
         <scene sceneID="MPm-FP-lsz">
             <objects>
                 <viewController id="DBF-hO-URe" customClass="MainVC" customModule="Introduction_to_iOS_Development" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,18 +23,6 @@
                                     <constraint firstAttribute="height" constant="345" id="2TD-74-EkG"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R39-Tg-eXn">
-                                <rect key="frame" x="161" y="215.5" width="278" height="169"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="169" id="Qab-E4-lfG"/>
-                                    <constraint firstAttribute="width" constant="278" id="kTn-Oh-oYO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <size key="shadowOffset" width="2" height="2"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AD-DJ-pwP">
                                 <rect key="frame" x="234" y="509" width="133" height="71"/>
                                 <constraints>
@@ -45,9 +33,22 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="getAnswer:" destination="DBF-hO-URe" eventType="touchUpInside" id="Fch-Cg-FNu"/>
+                                    <action selector="getAnswer:" destination="DBF-hO-URe" eventType="touchUpInside" id="rBM-2h-6rO"/>
+                                    <action selector="getAnswers:" destination="DBF-hO-URe" eventType="touchUpInside" id="OhY-nA-JMD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get answers!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R39-Tg-eXn">
+                                <rect key="frame" x="161" y="216" width="278" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="169" id="Qab-E4-lfG"/>
+                                    <constraint firstAttribute="width" constant="278" id="kTn-Oh-oYO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.39106969330194985" green="0.21583380872356939" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -62,32 +63,14 @@
                             <constraint firstAttribute="bottom" secondItem="1AD-DJ-pwP" secondAttribute="bottom" constant="20" symbolic="YES" id="uN4-fg-XuP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Shake for Answer" id="wCt-fc-vbD"/>
+                    <navigationItem key="navigationItem" title="The Original Sarcastic 8 Ball!" id="wCt-fc-vbD"/>
                     <connections>
                         <outlet property="MainLabel" destination="R39-Tg-eXn" id="VUj-el-KTH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCA-Cp-0tM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077" y="-18"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="zjH-Gc-zPr">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bxG-zt-2NL" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="haQ-yX-wvd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="DBF-hO-URe" kind="relationship" relationship="rootViewController" id="Fkl-pA-cVp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3YL-Kc-07R" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="265" y="-18"/>
+            <point key="canvasLocation" x="1889" y="-18"/>
         </scene>
     </scenes>
     <resources>
