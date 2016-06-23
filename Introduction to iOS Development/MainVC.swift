@@ -21,9 +21,8 @@ class MainVC: UIViewController {
     }
     
     @IBAction func getAnswer(sender: UIButton) {
-        counter = counter == 4 ? 0 : counter
-        MainLabel.text = messages[counter]
-        counter = counter + 1
+        MainLabel.text = messages[++counter]
+        
     }
     
 }
