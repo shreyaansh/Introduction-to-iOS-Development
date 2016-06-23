@@ -21,10 +21,15 @@ class MainVC: UIViewController {
     }
     
     @IBAction func getAnswer(sender: UIButton) {
+<<<<<<< HEAD
         MainLabel.text = "Hey! It pressed."
         /*counter = counter == 4 ? 0 : counter
         MainLabel.text = messages[counter]
         counter = counter + 1*/
+=======
+        MainLabel.text = messages[++counter]
+        
+>>>>>>> parent of e4daadb... Fixing counter problem
     }
     
 }
