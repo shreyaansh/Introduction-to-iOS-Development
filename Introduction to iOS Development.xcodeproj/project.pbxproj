@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC6F46CD1D20EDD300361A82 /* AlternateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6F46CC1D20EDD300361A82 /* AlternateVC.swift */; };
 		ACC818EE1D1AA1BD004734F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC818ED1D1AA1BD004734F0 /* AppDelegate.swift */; };
 		ACC818F31D1AA1BD004734F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC818F11D1AA1BD004734F0 /* Main.storyboard */; };
 		ACC818F51D1AA1BD004734F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC818F41D1AA1BD004734F0 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC6F46CC1D20EDD300361A82 /* AlternateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlternateVC.swift; sourceTree = "<group>"; };
 		ACC818EA1D1AA1BD004734F0 /* Introduction to iOS Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Introduction to iOS Development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC818ED1D1AA1BD004734F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACC818F21D1AA1BD004734F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				ACC818F91D1AA1BD004734F0 /* Info.plist */,
 				ACC8191B1D1AAB0D004734F0 /* MainVC.swift */,
 				ACC8191D1D1AAD5D004734F0 /* Shakesound.wav */,
+				AC6F46CC1D20EDD300361A82 /* AlternateVC.swift */,
 			);
 			path = "Introduction to iOS Development";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC818EE1D1AA1BD004734F0 /* AppDelegate.swift in Sources */,
+				AC6F46CD1D20EDD300361A82 /* AlternateVC.swift in Sources */,
 				ACC8191C1D1AAB0D004734F0 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
